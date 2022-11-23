@@ -20,6 +20,7 @@ function random(){
         invalid.innerText="Invalid Captcha!!!"
     }
     });
+    
     ref.addEventListener('click' ,random);
     window.addEventListener('load' ,random);
 
