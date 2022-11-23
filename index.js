@@ -19,13 +19,19 @@ function random(){
     
     sub.addEventListener('click', ()=>{
         if(input.value != output.value){
-            // invalid.innerText="Invalid Captcha!!!"
-            alert("Incorrect Captcha!!!");
-            input.value=""
+            invalid.innerText="Invalid Captcha!!!"
+            // alert("Incorrect Captcha!!!");
+            input.value="";
+            setTimeout(()=>{
+                invalid.innerText="";
+            },1000);
     }
     else{
         invalid.innerText="Your Captcha Is Correct👍";
-        input.value=""
+        input.value="";
+        setTimeout(()=>{
+            invalid.innerText="";
+        },1000);
     }
     });
     
